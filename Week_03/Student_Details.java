@@ -28,7 +28,7 @@ for(int i=0;i<4;i++)
 {
 total+=subject[i];
 }
-System.out.println("Percentage : "+(total+total*0.08)/450);
+System.out.println("Percentage if taken part Technical Events : "+(total+total*0.08)/450);
 }
 void calculateMarks(double ex)
 {
@@ -37,11 +37,11 @@ for(int i=0;i<4;i++)
 {
 total+=subject[i];
 }
-System.out.println("Percentage : "+(total+total*0.045)/450);
+System.out.println("Percentage if taken part in Non-Technical Events : "+(total+total*0.045)/450);
 }
 }
 
-public class StudentDetails
+public class Student_Details
 {
 public static void main(String args[])
 {
