@@ -16,7 +16,7 @@ dim2=y;
  }
  void displaydetails()
  {
-         System.out.println("the dimentions are " +dim1 +dim2 +"area is:"+area);
+         System.out.println("the dimensions are " +dim1 +dim2 +"area is:"+area);
  }
 }
 class triangle extends shape
@@ -31,22 +31,20 @@ dim2=y;
  }
  void displaydetails()
  {
-         System.out.println("the dimentions are " +dim1 +dim2 +"area is:"+area);
+         System.out.println("the dimensions are " +dim1 +dim2 +"area is:"+area);
  }
 }
 class square extends shape
 {double area;
-square(double x,double y)
+square(double x)
 {dim1=x;
-dim2=y;
 }
  void calculatearea()
- {area=dim1*dim2;
-
+ {area=dim1*dim1;
  }
  void displaydetails()
  {
-         System.out.println("the dimentions are " +dim1 +dim2 +"area is:"+area);
+         System.out.println("the dimensions are " +dim1 +"area is:"+area);
  }
 }
 public class Area {
@@ -74,8 +72,7 @@ Scanner in = new Scanner(System.in);
                break;
         case 3:System.out.println("enter the dimensions");
                    x=in.nextDouble();
-                   y=in.nextDouble();
-                   rectangle obj3 = new rectangle(x,y);
+                   square obj3 = new square(x);
                    obj3.calculatearea();
                    obj3.displaydetails();
                    break;
