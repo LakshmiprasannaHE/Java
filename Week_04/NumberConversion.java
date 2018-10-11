@@ -12,7 +12,7 @@ public class A {
 	public void btd(){
 		System.out.println("enter binary");
 		String n=input.nextLine();
-		System.out.println("Binary:"+Integer.parseInt(n,2));
+		System.out.println("Decimal:"+Integer.parseInt(n,2));
 		
 	}
 }
