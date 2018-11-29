@@ -11,7 +11,7 @@ ActionListener,MouseListener,KeyListener {
         add(Button1);
         Button1.addActionListener(this);
         addMouseListener(this);
-        addKeyListener(this);
+        Button1.addKeyListener(this);
     }
     public void paint(Graphics g){
         g.drawString("hello",10,20);
