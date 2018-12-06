@@ -42,8 +42,6 @@ public class week7q2{
 			if(yes==0) {
 				con.rollback(sp1);
 			}
-			sql="select name and usn from college where cgpa<'9'";
-			rs=stmt.executeQuery(sql);
 			con.releaseSavepoint(sp1);
 			con.commit();
 		}
