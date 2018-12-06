@@ -4,7 +4,7 @@ import java.applet.*;
 
 
 
-public class week7q1 extends Applet implements
+public class week6q1 extends Applet implements
 ActionListener,MouseListener,KeyListener {
     public void init(){
         Button Button1 =new Button("ok");
