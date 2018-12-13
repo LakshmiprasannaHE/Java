@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 @WebServlet("/track")
 public class track extends HttpServlet {
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		 HttpSession session = req.getSession(true);
 		 Date createTime = new Date(session.getCreationTime());
 		 Date lastAccessTime = new Date(session.getLastAccessedTime());
