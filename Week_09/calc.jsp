@@ -14,9 +14,9 @@
 %>
 <%
 	String number=request.getParameter("number");
-	int num=Integer.parseInt(number);
+	double num=Integer.parseInt(number);
 	String oper=request.getParameter("oper");
-	if(oper.equals("Sine")){
+	if(oper.equals("sine")){
 		radian=Math.toRadians(num);
 		output=Math.sin(radian);
 	}
