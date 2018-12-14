@@ -16,7 +16,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse
 resp) throws ServletException, IOException {
 try {
 Connection con=null;
-String value4=req.getParameter("value2");
+String value4=req.getParameter("value3");
 PrintWriter out=resp.getWriter();
 int x = Integer.parseInt(value4.substring(6,10));
 if(x>2000){
