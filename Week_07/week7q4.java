@@ -6,7 +6,7 @@ public class week7q4{
 		Connection con=null;
 		Scanner input=new Scanner(System.in);
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","");
 			Statement stmt=con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
 			con.setAutoCommit(false);
